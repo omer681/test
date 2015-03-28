@@ -12,6 +12,7 @@ module.exports = function(grunt) {
 		watch: {
 			watchHtml: {
 				files: ['*.html', '*.js', '*.css'],
+				tasks: ['validation'],
 				options: {
 					livereload: true
 				}
@@ -42,11 +43,20 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		validation: {
+			options: {
+				reset: true
+			},
+			files: {
+				src: '*.html'
+			}
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-markdown');
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-html-validation');
 
 	grunt.registerTask('default', ['connect:server', 'markdown', 'watch']);
 
