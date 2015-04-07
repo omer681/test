@@ -1,0 +1,70 @@
+body {
+	font-family: Open Sans;
+}
+
+.info-boxes li {
+	list-style-type: none;
+	border-radius: 6px;
+	box-shadow: 0px 1px 4px 0px #a2a2a2;
+	width: 290px;
+	height: 174px;
+
+	color:  #ffffff;
+	font-size: 24px; /* Approximation due to font substitution */
+	font-weight: 200;
+	text-align: left;
+
+	position: relative;
+}
+
+.info-boxes p {
+	padding: 15px 0 0 13px;
+	line-height: normal;
+}
+
+.info-boxes a {
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	text-align: left;
+
+	position: absolute;
+	bottom: 15px;
+	padding-left: 14px;
+}
+
+.info-boxes a:before {
+	vertical-align: -50%;
+	padding-right: 8px;
+}
+
+#bullshit-info-box {
+	background-color: rgba(255, 51, 153, 0.9);
+}
+
+#bullshit-info-box:hover {
+	background-color: rgba(255, 51, 153, 1);
+}
+
+#bullshit-info-box a:before {
+	content: url("../img/link_icon.png");	
+}
+
+
+.icon-list li {
+	list-style-type: none;
+	float: left;
+
+	font-size: 16px;
+	width: 150px;
+	height: 143px;
+}
+
+#data-monetization:before {
+	content: url('../img/solution_icon_smart-money.png');
+}
+#data-monetization:hover:before {
+	content: url('../img/solution_icon_smart-money_hover.png');
+}
