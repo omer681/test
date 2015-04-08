@@ -1,5 +1,6 @@
 body {
 	font-family: Open Sans;
+	clear: both;
 }
 
 .info-boxes li {
@@ -67,4 +68,9 @@ body {
 }
 #data-monetization:hover:before {
 	content: url('../img/solution_icon_smart-money_hover.png');
+}
+
+
+.button {
+	display: block;
 }
