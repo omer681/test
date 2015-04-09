@@ -2,6 +2,9 @@ body {
 	font-family: Open Sans;
 }
 
+.info-boxes {
+	padding-left: 0;
+}
 .info-boxes li {
 	list-style-type: none;
 	border-radius: 6px;
@@ -133,6 +136,9 @@ body {
 	width: 296px;
 	height: 119px;
 }
+.post:hover {
+	background-color: rgba(255,255,255,1);
+}
 
 .post .date {
 	display: block;
@@ -178,10 +184,12 @@ body {
 
 .post-list a {
 	color: white;
+	float: left;
 	clear: left;
-	display: block;
+	display: inline-block;
 	text-decoration: none;
 	text-align: left;
+	margin-left: 5px;
 }
 .post-list a:before {	
 	display: inline-block;
@@ -200,4 +208,92 @@ body {
 }
 .event-link:hover:before {
 	content: url('../img/post-list_event_hover.png');
+}
+
+
+
+.hover-block .onhover {
+	display: none;
+}
+.hover-block:hover .onhover {
+	display: inline-block;
+}
+.hover-block:hover .offhover {
+	display: none;
+}
+.company-block {
+	border-radius: 2px;
+	background-color: white;
+	width: 110px;
+	height: 97px;
+	line-height: 97px;
+}
+.company-block img {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+.quote-block {
+	border-radius: 2px;
+	background-color: white;
+
+	width: 230px;
+	height: 210px;
+	color: #565656;
+
+}
+.quote-block:hover {
+	background-color: #3aa6db;
+}
+.quote-block blockquote:before {
+	padding: 0;
+	margin-right: 10px;
+}
+.quote-block .offhover blockquote:before {
+	content: url('../img/quote-grey.png');
+}
+.quote-block .onhover blockquote:before {
+	content: url('../img/quote-blue.png');
+}
+.quote-block blockquote {
+	font-size: 19px;
+	font-style: normal;
+	margin: 0;
+}
+
+.quote-block .up {
+	padding: 10px 0px 13px 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+	border-bottom: 1px solid #dddddd;	
+}
+
+.quote-block .down {
+	font-style: normal;
+	font-size: 14px;
+
+	margin: 10px;
+}
+.quote-block .down [itemprop='name'] {
+	display: block;
+	color: #3aa6db;
+	font-size: 17px;
+	font-weight: 300;
+	font-variant: small-caps;
+}
+
+.quote-block .onhover {
+	padding: 10px;
+}
+
+.quote-block.image {
+	width: 350px;
+	height: 210px;
+}
+.quote-block img {
+	float: left;
+	padding-right: 10px;
 }
