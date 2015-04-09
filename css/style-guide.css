@@ -1,6 +1,5 @@
 body {
 	font-family: Open Sans;
-	clear: both;
 }
 
 .info-boxes li {
@@ -53,16 +52,24 @@ body {
 	content: url("../img/link_icon.png");	
 }
 
-
+.icon-list {
+	padding-left: 0;
+	font-size: 0; /* remove spacing between list items */
+}
 .icon-list li {
 	list-style-type: none;
 	display: inline-block;
 
 	font-size: 16px;
-	width: 150px;
-	height: 143px;
+	padding-right: 5px;
 }
-
+.icon-list li + li {
+	padding-left: 5px;
+}
+.icon-list li:before {
+	display: block;
+	text-align: center;	
+}
 #data-monetization:before {
 	content: url('../img/solution_icon_smart-money.png');
 }
@@ -104,17 +111,30 @@ body {
 	right: 12px;
 }
 
-
-
-.news-item {
+.post-list {
+	padding-left: 0;
+}
+.post-list li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 29px;
+}
+.post-list li:before {
 	display: block;
-	background-color: rgba(0,255,255,0.4);
+	content: attr(header);
+	font-size: 34px;
+	margin-bottom: 5px;
+}
+
+.post {
+	display: block;
+	background-color: rgba(255,255,255,0.4);
 
 	width: 296px;
 	height: 119px;
 }
 
-.news-item .date {
+.post .date {
 	display: block;
 
 	border-radius: 2px;
@@ -131,7 +151,7 @@ body {
 	margin: 11px 12px 11px 10px;
 }
 
-.news-item .day {
+.post .day {
 	display: block;
 	height: 65px;
 	width: 69px;
@@ -140,18 +160,44 @@ body {
 	border-bottom-width: 1px;
 }
 
-.news-item .month {
+.post .month {
 	font-size: 18px;
 	height: 33px;
 	line-height: 33px;
 }
 
-.news-item .text {
+.post .text {
 	display: block;
 
 	color: black;
 	font-size: 15px;
 
-	padding-top: 14px;
+	padding-top: 10px;
 	padding-right: 5px;
+}
+
+.post-list a {
+	color: white;
+	clear: left;
+	display: block;
+	text-decoration: none;
+	text-align: left;
+}
+.post-list a:before {	
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 8px;
+}
+
+.news-link:before {
+	content: url('../img/post-list_news.png');
+}
+.news-link:hover:before {
+	content: url('../img/post-list_news_hover.png');
+}
+.event-link:before {
+	content: url('../img/post-list_event.png');
+}
+.event-link:hover:before {
+	content: url('../img/post-list_event_hover.png');
 }
