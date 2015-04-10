@@ -210,16 +210,22 @@ body {
 	content: url('../img/post-list_event_hover.png');
 }
 
-
-
+.hover-block {
+	position: relative;
+}
+.hover-block .offhover,
 .hover-block .onhover {
-	display: none;
+	position: absolute;
+	display: block;
+	transition: opacity 2s ease-out;
 }
-.hover-block:hover .onhover {
-	display: inline-block;
-}
+.hover-block .onhover,
 .hover-block:hover .offhover {
-	display: none;
+	opacity: 0;
+}
+.hover-block .offhover,
+.hover-block:hover .onhover {
+	opacity: 1;
 }
 .company-block {
 	border-radius: 2px;
@@ -232,6 +238,8 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
+
+	top: 25%;
 }
 
 
@@ -242,31 +250,30 @@ body {
 	width: 230px;
 	height: 210px;
 	color: #565656;
-
+	padding: 0;
 }
-.quote-block:hover {
+.quote-block .onhover {
+	width: 100%;
+	height: 100%;
 	background-color: #3aa6db;
 }
 .quote-block blockquote:before {
 	padding: 0;
 	margin-right: 10px;
 }
-.quote-block .offhover blockquote:before {
-	content: url('../img/quote-grey.png');
-}
-.quote-block .onhover blockquote:before {
-	content: url('../img/quote-blue.png');
+.quote-block blockquote:before {
+	content: url('../img/quote-grey2.png');
 }
 .quote-block blockquote {
-	font-size: 19px;
+	font-size: 19.5px;
 	font-style: normal;
 	margin: 0;
 }
 
 .quote-block .up {
-	padding: 10px 0px 13px 0px;
+	padding: 17px 0px 20px 0px;
 	margin-left: 10px;
-	margin-right: 10px;
+	margin-right: 3px;
 
 	border-bottom: 1px solid #dddddd;	
 }
@@ -286,7 +293,9 @@ body {
 }
 
 .quote-block .onhover {
-	padding: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	color: white;
 }
 
 .quote-block.image {
@@ -295,5 +304,5 @@ body {
 }
 .quote-block img {
 	float: left;
-	padding-right: 10px;
+	padding-right: 15px;
 }
