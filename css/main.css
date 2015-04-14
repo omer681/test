@@ -138,8 +138,65 @@ h2 {
 
 .stories-container {
 	background-color: #ececec;
+	height: 550px;
 }
 .stories h2 {
 	padding-top: 70px;
+	text-align: center;
+}
+.stories ul {
+	position: relative;
+}
+.stories li {
+	position: absolute;
+}
+
+
+
+.footer-container {
+	height: 320px;
+	background-image: url('../img/slide-bg-footer.png');
+}
+footer.bottom {
+	color: white;
+	position: relative;
+}
+footer.bottom nav dt {
+	display: inline-block;
+}
+footer.bottom nav ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+footer.bottom nav > ul > li {
+	float: left;
+	width: 260px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+footer.bottom nav ul ul li {
+	clear: left;
+	text-transform: none;
+	font-size: 14px;
+}
+footer.bottom nav ul ul {
+	margin-top: 15px;
+}
+footer.bottom nav a {
+	text-decoration: none;
+	color: white;
+}
+
+
+.media {
+	position: absolute;
+	right: 0;
+	width: 263px;
+	background-color:  rgba(225, 225, 225, 0.28);
+}
+.media h3 {
+	color: #4ea7d3;
+	font-size: 18px;
+	font-weight: bold;
 	text-align: center;
 }
