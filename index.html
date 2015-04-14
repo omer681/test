@@ -15,18 +15,27 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <header class="top">
-            <img src="img/comverse-logo.png">
-            <nav>
-                <ul class="menu">
-                    <li><a href="">Your Needs</a></li>
-                    <li><a href="">Our Portfolio</a></li>
-                    <li><a href="">News &amp; Media</a></li>
-                    <li><a href="">About Comverse</a></li>
+        <div class="top-container">
+            <header class="top">
+                <ul class="menu upper-menu">
+                    <li>EN▾</li>
+                    <li>Customer login</li>
                 </ul>
-            </nav>
-        </header>
+                <img src="img/comverse-logo.png">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="">Your Needs</a></li>
+                        <li><a href="">Our Portfolio</a></li>
+                        <li><a href="">News &amp; Media</a></li>
+                        <li><a href="">About Comverse</a></li>
+                    </ul>
+                    <form class="search-field">
+                        <input type="text" class="input">
+                        <input type="submit" class="submit" value="">
+                    </form>
+                </nav>
+            </header>
+        </div>
         <main>
             <div class="banner-container">
                 <section class="banner">
@@ -71,8 +80,8 @@
                     <h2>What's happening at Comverse?</h2>
                     <dl class="post-list">
                         <dt>News</dt>
-                        <dd class="post styled-post">
-                            <div itemscope itemtype="http://schema.org/NewsArticle">
+                        <dd>
+                            <div class="post styled-post" itemscope itemtype="http://schema.org/NewsArticle">
                                 <time itemprop="datePublished" datetime="2015-09-04" class="date">
                                     <span class="day">04</span>
                                     <span class="month">Sep</span>
@@ -82,18 +91,18 @@
                             <a href="" class="news-link">All News</a>
                         </dd>
                         <dt>Events</dt>
-                        <dd class="post styled-post">
-                            <div itemscope itemtype="http://schema.org/NewsArticle">
+                        <dd>
+                            <div class="post styled-post" itemscope itemtype="http://schema.org/NewsArticle">
                                 <time itemprop="datePublished" datetime="2015-09-04" class="date">
                                     <span class="day">04</span>
                                     <span class="month">Sep</span>
                                 </time>
                                 <span itemprop="articleBody" class="text">Comverse Regains Lead in Convergent Charging Market</span>
                             </div>
-                            <a href="" class="news-link">All News</a>
+                            <a href="" class="event-link">All Events</a>
                         </dd>
-                        <dd class="post styled-post">
-                            <div itemscope itemtype="http://schema.org/NewsArticle">
+                        <dd>
+                            <div class="post styled-post" itemscope itemtype="http://schema.org/NewsArticle">
                                 <time itemprop="datePublished" datetime="2015-09-04" class="date">
                                     <span class="day">04</span>
                                     <span class="month">Sep</span>
@@ -127,7 +136,7 @@
                                 <blockquote>BTC, a full-service provider in the Bahamas, depends on Comverse solutions for real-time BSS, voice services, SMS, MMS and data management and monetization.</blockquote>
                             </div>
                         </li>
-                        <li class="hover-block quote-block image" style="top: 104px; left: 360px">
+                        <li class="hover-block quote-block image" style="top: 107px; left: 360px">
                             <div class="offhover">      
                             <cite itemscope itemtype="http://schema.org/Person">
                                 <div class="up">
@@ -145,7 +154,7 @@
                                 <blockquote>The expectations of Jersey Telecom have been completely met by Comverse ONE BSS – and in some areas exceeded.</blockquote>
                             </div>
                         </li>
-                        <li class="hover-block quote-block" style="top: 0; left: 717px">
+                        <li class="hover-block quote-block" style="top: 0; left: 720px">
                             <div class="offhover">      
                             <cite itemscope itemtype="http://schema.org/Person">
                                 <div class="up">
@@ -163,15 +172,15 @@
                             </div>
                         </li>
                         <li class="company-block" style="top: 0; left: 360px"><img src="img/companies_max-telecom.jpg"></li>
-                        <li class="company-block" style="top: 0; left: 479px"><img src="img/companies_kyivstarw.jpg"></li>
-                        <li class="company-block" style="top: 0; left: 598px"><img src="img/companies_videocon.jpg"></li>
+                        <li class="company-block" style="top: 0; left: 480px"><img src="img/companies_kyivstarw.jpg"></li>
+                        <li class="company-block" style="top: 0; left: 600px"><img src="img/companies_videocon.jpg"></li>
                         <li class="company-block" style="top: 220px; left: 0"><img src="img/companies_mtc.jpg"></li>
-                        <li class="company-block" style="top: 220px; left: 119px"><img src="img/companies_tata-sky.jpg"></li>
-                        <li class="company-block" style="top: 220px; left: 238px"><img src="img/companies_upc.jpg"></li>
-                        <li class="company-block" style="top: 220px; left: 717px"><img src="img/companies_3mob.jpg"></li>
-                        <li class="company-block" style="top: 220px; left: 836px"><img src="img/companies_play.jpg"></li>
+                        <li class="company-block" style="top: 220px; left: 120px"><img src="img/companies_tata-sky.jpg"></li>
+                        <li class="company-block" style="top: 220px; left: 240px"><img src="img/companies_upc.jpg"></li>
+                        <li class="company-block" style="top: 220px; left: 720px"><img src="img/companies_3mob.jpg"></li>
+                        <li class="company-block" style="top: 220px; left: 840px"><img src="img/companies_play.jpg"></li>
                     </ul>
-                    <a href="">All 256 Success Stories</a>
+                    <a class="button navigation-button" href="" style="position: relative; top: 335px; left: 350px">All 256 Success Stories</a>
                 </section>
             </div>
         </main>
@@ -192,14 +201,23 @@
                         <h3>Subscribe to Comverse</h3>
                         <form accept-charset="utf-8">
                             <input type="email">
-                            <button>Sign Up</button>
+                            <button class="button">Sign Up</button>
                         </form>
                     </div>
                     <footer>
                         <ul>
-                            <li><a href="">YouTube</a></li>
-                            <li><a href="">Twitter</a></li>
-                            <li><a href="">LinkedIn</a></li>
+                            <li class="hover-block">
+                                <img class="offhover" src="img/socialMenuIcon-youtube.png">
+                                <img class="onhover" src="img/socialMenuIcon-youtube_hover.png">
+                            </li>
+                            <li class="hover-block">
+                                <img class="offhover" src="img/socialMenuIcon-twitter.png">
+                                <img class="onhover" src="img/socialMenuIcon-twitter_hover.png">
+                            </li>
+                            <li class="hover-block">
+                                <img class="offhover" src="img/socialMenuIcon-linkdin.png">
+                                <img class="onhover" src="img/socialMenuIcon-linkdin_hover.png">
+                            </li>
                         </ul>
                     </footer>
                 </section>
@@ -241,8 +259,9 @@
                         </li>
                     </dl>
                 </nav>
-                <p>Copyright © 2012 Comverse, Inc.</p>
-                <p><a href="">Privacy Policy</a></p>
+                <div class="copyright">
+                    <p>Copyright © 2012 Comverse, Inc. | <a href="">Privacy Policy</a></p>
+                </div>
             </footer>
         </div>
 

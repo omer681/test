@@ -269,11 +269,14 @@ body {
 }
 .hover-block .offhover,
 .hover-block .onhover {
-	position: absolute;
 	display: block;
-	-webkit-transition: opacity 0.5s ease-out;
-	-moz-transition: opacity 0.5s ease-out;
-	transition: opacity 0.5s ease-out;
+	-webkit-transition: opacity 0.25s ease-out;
+	-moz-transition: opacity 0.25s ease-out;
+	transition: opacity 0.25s ease-out;
+}
+.hover-block .onhover {	
+	position: absolute;
+	top: 0;
 }
 .hover-block .onhover,
 .hover-block:hover .offhover {
@@ -413,4 +416,29 @@ body {
 }
 .menu li:first-child:before {
 	content: none;
+}
+
+
+.search-field {
+	border: 1px solid #d2d2d2;
+	border-radius: 5px;
+	width: 180px;
+}
+.search-field .input {
+	margin-left: 5px;
+	padding: 0;
+	width: 149px;
+	height: 25px;
+	border: none;
+}
+.search-field .input:focus {
+	outline: none;
+}
+.search-field .submit {
+	background: url('../img/searchBtn.png') no-repeat scroll center center;
+	float: right;
+	border: none;
+	border-left: 1px solid #d2d2d2;
+	width: 26px;
+	height: 25px;
 }
