@@ -56,11 +56,13 @@ footer.bottom {
 	box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
+main {
+	padding-top: 90px;
+}
 .banner-container {
-	background: url('../img/slide-bg-complexity.jpg') no-repeat center center fixed;
-	background-size: cover;
-	padding-top: 120px;
-	height: 630px;
+	background: url('../img/slide-bg-complexity.jpg') no-repeat center 90px fixed;
+	background-size: auto 639px;
+	height: 639px;
 	z-index: 5;
 }
 .banner {
@@ -68,6 +70,7 @@ footer.bottom {
 	height: 100%;
 }
 .banner h2 {
+	padding-top: 50px;
 	text-align: left;
 	width: 415px;
 }

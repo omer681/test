@@ -11,11 +11,12 @@ body {
 	display: inline-block;
 	border-radius: 6px;
 	box-shadow: 0px 1px 4px 0px #a2a2a2;
-	width: 290px;
+	width: 280px;
 	height: 174px;
+	padding-right: 10px;
 
 	color:  #ffffff;
-	font-size: 24px; /* Approximation due to font substitution */
+	font-size: 23px; /* Approximation due to font substitution */
 	font-weight: 200;
 	text-align: left;
 
