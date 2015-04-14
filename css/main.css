@@ -1,0 +1,145 @@
+body {
+	margin: 0;
+}
+header.top {
+	height: 90px;
+	background-color: white;
+	box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.09);
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+header.top nav,
+header.top ul,
+header.top img {
+	display: inline-block;
+	position: relative;
+}
+header.top nav {
+	bottom: -10px;
+}
+header.top img {
+	bottom: -10px;
+}
+main section,
+footer.bottom {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h2 {
+	margin-top: 0;
+	font-size: 42px;
+	font-weight: 300;
+	line-height: 44px;
+}
+
+.banner-container {
+	background: url('../img/slide-bg-complexity.jpg') no-repeat center center fixed;
+	background-size: cover;
+	padding-top: 120px;
+	height: 630px;
+}
+.banner {
+	color: white;
+	height: 100%;
+}
+.banner h2 {
+	text-align: left;
+	width: 415px;
+}
+.banner a.button {
+	margin: 20px 0 50px 0;
+}
+
+.services-container {
+	background-image: url('../img/slide-bg-services.png');
+	height: 421px;
+}
+.services {
+	height: 421px;
+	color: white;
+}
+.services h2 {
+	text-align: center;
+	padding: 50px;
+	font-size: 42px;
+	font-weight: 300;
+}
+.services a.button {
+	margin: 45px auto 0 auto;
+}
+.services .icon-list li:before {
+	height: 63px;
+}
+.services .icon-list li {
+	width: 160px;
+	text-align: center;
+	vertical-align: text-top;
+}
+
+.icon-list .biz-analytics:before {
+	content: url('../img/solution_icon_biz-analitics.png');
+}
+.icon-list .biz-analytics:hover:before {
+	content: url('../img/solution_icon_biz-analitics_hover.png');
+}
+.icon-list .cx:before {
+	content: url('../img/solution_icon_diti-cx.png');
+}
+.icon-list .cx:hover:before {
+	content: url('../img/solution_icon_diti-cx_hover.png');
+}
+.icon-list .smart-monetization:before {
+	content: url('../img/solution_icon_smart-money.png');
+}
+.icon-list .smart-monetization:hover:before {
+	content: url('../img/solution_icon_smart-money_hover.png');
+}
+.icon-list .optimization:before {
+	content: url('../img/solution_icon_optimize-efficnt.png');
+}
+.icon-list .optimization:hover:before {
+	content: url('../img/solution_icon_optimize-efficnt_hover.png');
+}
+.icon-list .choice-control:before {
+	content: url('../img/solution_icon_personal.png');
+}
+.icon-list .choice-control:hover:before {
+	content: url('../img/solution_icon_personal_hover.png');
+}
+.icon-list .biz-transformation:before {
+	content: url('../img/solution_icon_biz-transform.png');
+}
+.icon-list .biz-transformation:hover:before {
+	content: url('../img/solution_icon_biz-transform_hover.png');
+}
+
+
+
+.news-container {
+	background: url('../img/slide-bg-news.png') no-repeat center center fixed;
+	background-size: cover;
+	height: 454px;
+}
+.news {
+	color: white;
+}
+.news h2 {
+	padding-top: 60px;
+	text-align: center;
+}
+.news .post-list {
+	margin-top: 110px;
+}
+
+
+
+.stories-container {
+	background-color: #ececec;
+}
+.stories h2 {
+	padding-top: 70px;
+	text-align: center;
+}

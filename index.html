@@ -6,12 +6,9 @@
         <title>Comverse</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/style-guide.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -19,10 +16,10 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
-            <h1>Comverse</h1>
+        <header class="top">
+            <img src="img/comverse-logo.png">
             <nav>
-                <ul>
+                <ul class="menu">
                     <li><a href="">Your Needs</a></li>
                     <li><a href="">Our Portfolio</a></li>
                     <li><a href="">News &amp; Media</a></li>
@@ -31,132 +28,152 @@
             </nav>
         </header>
         <main>
-            <section class="banner">
-                <header>
-                    <h2>Free Your Markets From IT Complexity</h2>
-                    Comverse Policy Studio <br>
-                    <strong>1st</strong> Ever Marketing-Oriented Policy Tool <br>
-                    <a href="">Learn More</a>
-                </header>
-                <ul>
-                    <li>
-                        <p>Comverse Is Value-Added Service Global Market Leader.</p>
-                        <a href="">Read More</a>
-                    </li>
-                    <li>
-                        <p>Comverse Is Value-Added Service Global Market Leader.</p>
-                        <a href="">Read More</a>
-                    </li>
-                    <li>
-                        <p>Comverse Is Value-Added Service Global Market Leader.</p>
-                        <a href="">Watch Now</a>
-                    </li>
-                </ul>
-            </section>
-            <section class="services">
-                <h2>What can we do for you?</h2>
-                <ul>
-                    <li>Data monetization</li>
-                    <li>Machine to machine (M2M)</li>
-                    <li>Over-the-top (OTT)</li>
-                    <li>Cloud computing</li>
-                    <li>Social Media</li>
-                </ul>
-                <a href="">See all of our solutions</a>
-            </section>
-            <section class="news">
-                <h2>What's happening at Comverse?</h2>
-                <dl>
-                    <dt>News</dt>
-                    <dd>
-                        <div itemscope itemtype="http://schema.org/NewsArticle">
-                            <time itemprop="datePublished" datetime="2015-09-04">04 Sep</time> - 
-                            <span itemprop="articleBody">Comverse Regains Lead in Convergent Charging Market</span>
-                        </div>
-                        <a href="">All News</a>
-                    </dd>
-                    <dt>Events</dt>
-                    <dd>
-                        <div itemscope itemtype="http://schema.org/NewsArticle">
-                            <time itemprop="datePublished" datetime="2015-09-04">04 Sep</time> - 
-                            <span itemprop="articleBody">Comverse Regains Lead in Convergent Charging Market</span>
-                        </div>
-                        <a href="">All Events</a>
-                    </dd>
-                    <dd>
-                        <div itemscope itemtype="http://schema.org/NewsArticle">
-                            <time itemprop="datePublished" datetime="2015-09-04">04 Sep</time> - 
-                            <span itemprop="articleBody">Comverse Regains Lead in Convergent Charging Market</span>
-                        </div>
-                        <a href="">All Events</a>
-                    </dd>
-                </dl>
-            </section>
-            <section class="stories">
-                <h2>Success Stories</h2>
-                <ul>
-                    <li>
-                        <blockquote>
-                            <p>We have very good and very warm relations with Comverse. We always achievet...</p>
-                            <footer>
-                                <cite itemscope itemtype="http://schema.org/Person">
-                                    <span itemprop="name">Sergey Korotych</span>,
-                                    <span itemprop="jobTitle">Deputy CTO</span>,
-                                    <span itemprop="worksFor">3 Mob, Ukraine</span>
-                                </cite>
-                            </footer>
-                        </blockquote>
-                    </li>
-                    <li>
-                        <blockquote>
-                            <p>Comverse has demonstrated that they are partners, not just suppliers, because they understand our needs ,our situations; together we are...</p>
-                            <footer>
-                                <cite itemscope itemtype="http://schema.org/Person">
-                                    <span itemprop="name">Adale Kehassan</span>,
-                                    <span itemprop="jobTitle">CIO</span> of 
-                                    <span itemprop="worksFor">Multi-links</span>
-                                </cite>
-                            </footer>
-                        </blockquote>
-                    </li>
-                    <li>
-                        <blockquote>
-                            <p>Comverse has been able to fully deliver what we want and we have peers...</p>
-                            <footer>
-                                <cite itemscope itemtype="http://schema.org/Person">
-                                    <span itemprop="name">Ravishanker</span>,
-                                    <span itemprop="worksFor">Tata Sky</span>
-                                    <span itemprop="jobTitle">CIO N.</span>
-                                </cite>
-                            </footer>
-                        </blockquote>
-                    </li>
-                    <li>Cycle 30</li>
-                    <li>Bull</li>
-                    <li>Gemplus</li>
-                    <li>MTC</li>
-                    <li>Cable &amp; Wireless</li>
-                    <li>Trilogy International Partners</li>
-                    <li>HP</li>
-                    <li>Atos</li>
-                </ul>
-                <a href="">All 256 Success Stories</a>
-            </section>
-            <div class="media">
-                <section class="blog">                    
+            <div class="banner-container">
+                <section class="banner">
+                    <header>
+                        <h2>Free Your Markets From IT Complexity</h2>
+                        Comverse Policy Studio <br>
+                        <strong>1st</strong> Ever Marketing-Oriented Policy Tool <br>
+                        <a class="button navigation-button" href="">Learn More</a>
+                    </header>
+                    <ul class="info-boxes">
+                        <li>
+                            <p>Comverse Is Value-Added Service Global Market Leader.</p>
+                            <a class="link-icon" href="">Read More</a>
+                        </li>
+                        <li>
+                            <p>Comverse Is Value-Added Service Global Market Leader.</p>
+                            <a class="document-icon" href="">Read More</a>
+                        </li>
+                        <li>
+                            <p>Comverse Is Value-Added Service Global Market Leader.</p>
+                            <a class="play-icon" ref="">Watch Now</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="services-container">
+                <section class="services">
+                    <h2>What can we do for you?</h2>
+                    <ul class="icon-list">
+                        <li class="biz-analytics">Business Stimulating Analytics</li>
+                        <li class="cx">Digital Customer Experience</li>
+                        <li class="smart-monetization">Smart Monetization</li>
+                        <li class="optimization">Optimization and Efficiency</li>
+                        <li class="choice-control">Personalized Choice &amp; Control</li>
+                        <li class="biz-transformation">Business Transformation</li>
+                    </ul>
+                    <a class="button navigation-button" href="">See all of our solutions</a>
+                </section>
+            </div>
+            <div class="news-container">
+                <section class="news">
+                    <h2>What's happening at Comverse?</h2>
+                    <dl class="post-list">
+                        <dt>News</dt>
+                        <dd class="post styled-post">
+                            <div itemscope itemtype="http://schema.org/NewsArticle">
+                                <time itemprop="datePublished" datetime="2015-09-04" class="date">
+                                    <span class="day">04</span>
+                                    <span class="month">Sep</span>
+                                </time>
+                                <span itemprop="articleBody" class="text">Comverse Regains Lead in Convergent Charging Market</span>
+                            </div>
+                            <a href="" class="news-link">All News</a>
+                        </dd>
+                        <dt>Events</dt>
+                        <dd class="post styled-post">
+                            <div itemscope itemtype="http://schema.org/NewsArticle">
+                                <time itemprop="datePublished" datetime="2015-09-04" class="date">
+                                    <span class="day">04</span>
+                                    <span class="month">Sep</span>
+                                </time>
+                                <span itemprop="articleBody" class="text">Comverse Regains Lead in Convergent Charging Market</span>
+                            </div>
+                            <a href="" class="news-link">All News</a>
+                        </dd>
+                        <dd class="post styled-post">
+                            <div itemscope itemtype="http://schema.org/NewsArticle">
+                                <time itemprop="datePublished" datetime="2015-09-04" class="date">
+                                    <span class="day">04</span>
+                                    <span class="month">Sep</span>
+                                </time>
+                                <span itemprop="articleBody" class="text">Comverse Regains Lead in Convergent Charging Market</span>
+                            </div>
+                            <a href="" class="event-link">All Events</a>
+                        </dd>
+                    </dl>
+                </section>
+            </div>
+            <div class="stories-container">
+                <section class="stories">
+                    <h2>Success Stories</h2>
+                    <ul>
+                        <li>
+                            <blockquote>
+                                <p>We have very good and very warm relations with Comverse. We always achievet...</p>
+                                <footer>
+                                    <cite itemscope itemtype="http://schema.org/Person">
+                                        <span itemprop="name">Sergey Korotych</span>,
+                                        <span itemprop="jobTitle">Deputy CTO</span>,
+                                        <span itemprop="worksFor">3 Mob, Ukraine</span>
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>Comverse has demonstrated that they are partners, not just suppliers, because they understand our needs ,our situations; together we are...</p>
+                                <footer>
+                                    <cite itemscope itemtype="http://schema.org/Person">
+                                        <span itemprop="name">Adale Kehassan</span>,
+                                        <span itemprop="jobTitle">CIO</span> of 
+                                        <span itemprop="worksFor">Multi-links</span>
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>Comverse has been able to fully deliver what we want and we have peers...</p>
+                                <footer>
+                                    <cite itemscope itemtype="http://schema.org/Person">
+                                        <span itemprop="name">Ravishanker</span>,
+                                        <span itemprop="worksFor">Tata Sky</span>
+                                        <span itemprop="jobTitle">CIO N.</span>
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                        </li>
+                        <li>Cycle 30</li>
+                        <li>Bull</li>
+                        <li>Gemplus</li>
+                        <li>MTC</li>
+                        <li>Cable &amp; Wireless</li>
+                        <li>Trilogy International Partners</li>
+                        <li>HP</li>
+                        <li>Atos</li>
+                    </ul>
+                    <a href="">All 256 Success Stories</a>
+                </section>
+            </div>
+        </main>
+        <footer class="bottom">
+            <section class="media">
+                <div class="blog">                    
                     <h3>Latest blog posts</h3>
                     <div itemscope itemtype="http://schema.org/BlogPosting">
                         <time itemprop="datePublished" datetime="2015-07-18">18 July</time> - 
                         <span itemprop="headline">Comverse Regains Lead in Convergent Changing Market</span>
                     </div>
-                </section>
-                <section class="subscribe">
+                </div>
+                <div class="subscribe">
                     <h3>Subscribe to Comverse</h3>
                     <form accept-charset="utf-8">
                         <input type="email">
                         <button>Sign Up</button>
                     </form>
-                </section>
+                </div>
                 <footer>
                     <ul>
                         <li><a href="">YouTube</a></li>
@@ -164,7 +181,7 @@
                         <li><a href="">LinkedIn</a></li>
                     </ul>
                 </footer>
-            </div>
+            </section>
             <nav>
                 <dl>
                     <dt>Key Solutions</dt>
@@ -195,8 +212,6 @@
                     <dd><a href="">Careers</a></dd>
                 </dl>
             </nav>
-        </main>
-        <footer>
             <p>Copyright © 2012 Comverse, Inc.</p>
             <p><a href="">Privacy Policy</a></p>
         </footer>
