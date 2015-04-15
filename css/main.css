@@ -209,6 +209,10 @@ main {
 	margin-top: 10px;
 }
 
+.stories .button {
+	margin: 25px auto 0 auto;
+}
+
 
 .footer-container {
 	height: 320px;
