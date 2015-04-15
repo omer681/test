@@ -265,27 +265,17 @@ body {
 	content: url('../img/post-list_event_hover.png');
 }
 
+
 .hover-block {
 	position: relative;
 }
 .hover-block .offhover,
 .hover-block .onhover {
-	display: block;
-	-webkit-transition: opacity 0.25s ease-out;
-	-moz-transition: opacity 0.25s ease-out;
-	transition: opacity 0.25s ease-out;
+	display: inline-block;
 }
-.hover-block .onhover {	
+.hover-block .offhover {
 	position: absolute;
 	top: 0;
-}
-.hover-block .onhover,
-.hover-block:hover .offhover {
-	opacity: 0;
-}
-.hover-block .offhover,
-.hover-block:hover .onhover {
-	opacity: 1;
 }
 .company-block {
 	list-style-type: none;
@@ -304,8 +294,12 @@ body {
 	left: 0;
 	right: 0;
 	margin: auto;
+	-webkit-transition: -webkit-filter 0.15s ease-out;
+	-moz-transition: -moz-filter 0.15s ease-out;	
+}
+.company-block:hover img {
 	-webkit-transition: -webkit-filter 0.35s ease-out;
-	-moz-transition: -moz-filter 0.35s ease-out;
+	-moz-transition: -moz-filter 0.35s ease-out;	
 }
 .company-block img {
 	-webkit-filter: grayscale(100%);
@@ -321,12 +315,28 @@ body {
 	list-style-type: none;
 	display: inline-block;
 	border-radius: 2px;
-	background-color: white;
 
 	width: 230px;
 	height: 210px;
 	color: #565656;
 	padding: 0;
+}
+.quote-block .offhover {
+	max-height: 210px;
+	overflow-y: hidden;
+	background-color: white;
+
+	-webkit-transition: max-height 0.3s ease;
+	-moz-transition: max-height 0.3s ease;
+	transition: max-height 0.3s ease;
+}
+.quote-block .offhover:hover {	
+	-webkit-transition: max-height 0.45s ease-out;
+	-moz-transition: max-height 0.45s ease-out;
+	transition: max-height 0.45s ease-out;
+}
+.quote-block:hover .offhover {
+	max-height: 0;
 }
 .quote-block .onhover {
 	width: 100%;

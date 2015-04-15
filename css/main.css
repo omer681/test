@@ -84,7 +84,7 @@ main {
 	background: url('../img/slide-bg-services.png') no-repeat center center;
 	background-size: cover;
 	height: 421px;
-	z-index: 4;
+	z-index: 3;
 }
 .services {
 	height: 421px;
@@ -155,8 +155,8 @@ main {
 	background: url('../img/slide-bg-news.png') no-repeat center center fixed;
 	background-size: cover;
 	height: 454px;
-	box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
-	z-index: 3;
+	box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+	z-index: 4;
 }
 .news {
 	color: white;
@@ -181,11 +181,34 @@ main {
 	text-align: center;
 }
 .stories ul {
-	position: relative;
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 0;
 }
 .stories li {
-	position: absolute;
+	display: inline-block;
+	vertical-align: top;
 }
+.stories li li.company-block + li.company-block {
+	margin-left: 10px;	
+}
+.stories .left li + li.company-block,
+.stories .right li + li.company-block {
+	margin-top: 10px;	
+}
+.stories li + li ul {
+	margin-left: 10px;
+}
+.stories .left, .stories .middle {
+	width: 350px;
+}
+.stories .right {
+	width: 230px;
+}
+.stories .middle .quote-block {
+	margin-top: 10px;
+}
+
 
 .footer-container {
 	height: 320px;
