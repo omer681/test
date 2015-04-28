@@ -37,8 +37,82 @@ header.top .upper-menu {
 }
 header.top .search-field {
 	display: inline-block;
-	margin-left: 39px;
+	float: right;
 }
+
+header.top .container {
+	position: relative;
+}
+header.top nav {
+	position: relative;
+	margin-left: 30px;
+	width: 740px;
+}
+header.top .dropdown {
+	position: absolute;
+	display: none;
+	width: 960px;
+	height: 200px;
+	left: -670px;
+	top: 40px;
+	background-color: white;;
+}
+header.top .dropdown ul {
+	margin-top: 30px;
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 15px;
+	width: 33%;
+}
+header.top .dropdown .right:before {
+	position: absolute;
+	content: url('../img/line_nav.png');
+	left: -30px;
+}
+header.top .dropdown .right {
+	position: absolute;
+	right: 20px;
+	top: 2px;
+}
+header.top .dropdown img {
+	width: 268px;
+}
+header.top .dropdown li {
+	font-size: 12px;
+}
+header.top li.header {
+	color: rgb(51, 153, 204);
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+li:hover .dropdown {
+	display: block;
+}
+header.top .navbar > li {
+	background-color: white;
+	padding: 5px 10px 0 10px;
+	margin-left: 0;
+}
+header.top .navbar > li:hover {
+	padding: 4px 9px 20px 9px;
+	border-left: 1px solid #d5d5d5;
+	border-right: 1px solid #d5d5d5;
+	border-top: 1px solid #d5d5d5;
+}
+header.top .navbar > li:hover, 
+header.top li:hover .dropdown {
+	box-shadow: rgba(0,0,0,0.4) -5px 9px 8px 0px;
+}
+header.top .navbar {
+	display: inline;
+}
+header.top .navbar > li {
+	float: left;
+}
+
+
 
 header.top,
 main section,

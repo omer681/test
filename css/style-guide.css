@@ -410,7 +410,8 @@ body {
 
 
 
-.menu li {
+.menu > li {
+	margin-left: 10px;
 	list-style-type: none;
 	display: inline;
 }
@@ -418,14 +419,7 @@ body {
 	text-decoration: none;
 	color: black;	
 }
-.menu li:before {
-	content: url('../img/divider.png');
-	padding-right: 15px;
-	padding-left: 10px;
-	position: relative;
-	vertical-align: -5px;
-}
-.menu li:first-child:before {
+.menu > li:first-child:before {
 	content: none;
 }
 
@@ -452,4 +446,28 @@ body {
 	border-left: 1px solid #d2d2d2;
 	width: 26px;
 	height: 25px;
+}
+
+
+
+.bullet-links {
+	margin-top: 10px;
+	padding-left: 0;
+	font-size: 0;
+}
+.bullet-links li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 7px;
+}
+.bullet-links a {
+	display: block;
+	background-color: #e5e5e5;
+	width: 11px;
+	height: 11px;
+	border-radius: 3px;
+	margin-left: 0px;
+}
+.bullet-links .active {
+	background-color: #2e95ca;
 }
