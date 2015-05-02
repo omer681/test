@@ -150,10 +150,14 @@ main {
 .banner h2 {
 	padding-top: 50px;
 	text-align: left;
-	width: 415px;
+	max-width: 415px;
 }
-.banner a.button {
-	margin: 20px 0 50px 0;
+.banner .button {
+	margin: 40px 0 50px 0;
+}
+.banner .bullet-links {
+	position: absolute;
+	top: 220px;
 }
 
 
@@ -166,6 +170,7 @@ main {
 }
 .services {
 	color: white;
+	text-align: center;
 }
 .services h2 {
 	text-align: center;
@@ -174,14 +179,13 @@ main {
 	font-weight: 300;
 }
 .services a.button {
+	display: inline-block;
 	margin: 45px auto 20px auto;
 }
 .services .icon-list li:before {
-	display: inline-block;
+	padding-top: auto;
+	box-sizing: border-box;
 	height: 63px;
-	vertical-align: middle;
-	margin: 0 auto;
-	width: 160px;
 }
 .services .icon-list li {
 	width: 160px;
@@ -258,6 +262,7 @@ main {
 	text-align: center;
 }
 .stories ul {
+	text-align: center;
 	list-style-type: none;
 	padding-left: 0;
 	font-size: 0;
@@ -273,8 +278,9 @@ main {
 .stories .right li + li.company-block {
 	margin-top: 10px;	
 }
-.stories li + li ul {
-	margin-left: 10px;
+.stories li ul {
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 .stories .left, .stories .middle {
 	width: 350px;
@@ -306,8 +312,14 @@ footer.bottom nav ul {
 	list-style-type: none;
 	padding-left: 0;
 }
+footer.bottom nav > ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
 footer.bottom nav > ul {
 	padding-top: 20px;
+	margin-bottom: 0;
 }
 footer.bottom nav > ul > li {
 	float: left;
@@ -328,13 +340,12 @@ footer.bottom nav a {
 	color: white;
 }
 
-
 .media {
 	position: absolute;
 	right: 0;
 	width: 263px;
 	height: 320px;
-	background-color:  rgba(225, 225, 225, 0.28);
+	background-color: rgba(225, 225, 225, 0.28);
 }
 .media h3 {
 	color: #4ea7d3;
@@ -348,6 +359,7 @@ footer.bottom nav a {
 	border-bottom: 1px #6a6a6a solid;
 	width: 230px;
 	margin: 0 auto;
+	padding-bottom: 10px;
 }
 .media .blog h3 {
 	margin-bottom: 0;
@@ -404,9 +416,110 @@ footer.bottom nav a {
 }
 
 
+footer.bottom .small {
+	display: none;
+}
+footer.bottom .small ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+footer.bottom .small li {
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	border-bottom: 1px black solid;
+}
+footer.bottom .small li div {
+	display: inline;
+}
 
 @media all and (max-width: 959px) {
-	.banner-container, .services-container, .news-container, .stories-container {
+	.banner-container, .services-container, .news-container, .stories-container, .footer-container, footer.bottom, .media {
 		height: auto;
+		width: 100%;
+	}
+	.banner-container {
+		background-size: auto;
+	}
+	.services .icon-list li {
+		width: 33%;
+	}
+
+	footer.bottom .wide {
+		display: none;
+	}
+	footer.bottom .small {
+		display: block;
+	}
+	footer.bottom .media {
+		position: static;
+		width: 100%;
+	}
+	footer.bottom .blog h3 {
+		margin-top: 0;
+		padding-top: 10px;
+	}
+
+	.stories .right {
+		display: none;
+	}
+
+	.stories {
+		padding-bottom: 20px;
+	}
+}
+
+@media all and (max-width: 900px) {
+	.banner-container .info-boxes li {
+		box-sizing: border-box;
+		width: 100%;
+		margin-right: 0;
+	}
+	.banner-container .info-boxes li:after {
+		position: absolute;
+		right: 10px;
+		top: 45%;
+		vertical-align: middle;
+		font-size: 70px;
+		content: '›';
+		line-height: 0;
+	}
+	.banner-container .bullet-links li {
+		width: 20px;
+		height: 40px;		
+	}
+	.banner-container .bullet-links a {
+		font-size: 16px;
+		color: black;
+		text-decoration: none;
+		text-align: center;
+		vertical-align: middle;
+		width: auto;
+		height: auto;
+	}
+	.banner-container .button {
+		margin-bottom: 0;
+	}
+	.banner-container article {
+		position: relative;
+		padding-bottom: 30px;
+	}
+	.banner-container article:after {
+		background: url('../img/slide-bg-services.png') no-repeat center center;
+		content: "";
+		opacity: 0.5;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.banner-container .bullet-links {
+		position: static;
 	}
 }

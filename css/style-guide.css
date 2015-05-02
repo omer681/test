@@ -43,6 +43,9 @@ body {
 .info-boxes li:nth-child(3):hover {
 	background-color: rgba(255, 102, 0, 1);
 }
+.info-boxes li:last-child {
+	margin-right: 0;
+}
 
 .info-boxes p {
 	padding: 10px 0 0 13px;
@@ -96,6 +99,9 @@ body {
 .icon-list li:before {
 	display: block;
 	text-align: center;
+	vertical-align: middle;
+	margin: 0 auto;
+	width: 100%;
 }
 .data-monetization:before {
 	content: url('../img/solution_icon_smart-money.png');
@@ -268,16 +274,26 @@ body {
 }
 
 
-.hover-block {
+.block {
+	display: inline-block;
 	position: relative;
 }
-.hover-block .offhover,
-.hover-block .onhover {
+.block .offhover,
+.block .onhover {
 	display: inline-block;
 }
-.hover-block .offhover {
+.block .offhover {
 	position: absolute;
 	top: 0;
+}
+.hover-block .onhover {
+	opacity: 0;
+}
+.hover-block:hover .offhover {
+	display: none;
+}
+.hover-block:hover .onhover {
+	opacity: 1;
 }
 .company-block {
 	list-style-type: none;
@@ -314,6 +330,7 @@ body {
 
 
 .quote-block {
+	text-align: left;
 	list-style-type: none;
 	display: inline-block;
 	border-radius: 2px;
