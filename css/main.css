@@ -18,6 +18,7 @@ h2 {
 }
 header.top {
 	position: relative;
+	height: 100%;
 }
 header.top nav,
 header.top ul,
@@ -36,8 +37,9 @@ header.top .upper-menu {
 	font-size: 14px;
 }
 header.top .search-field {
-	display: inline-block;
-	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 10px;
 }
 
 header.top .container {
@@ -53,9 +55,9 @@ header.top .dropdown {
 	display: none;
 	width: 960px;
 	height: 200px;
-	left: -670px;
-	top: 40px;
-	background-color: white;;
+	left: -220px;
+	top: 22px;
+	background-color: white;
 }
 header.top .dropdown ul {
 	margin-top: 30px;
@@ -107,9 +109,11 @@ header.top li:hover .dropdown {
 }
 header.top .navbar {
 	display: inline;
+	font-size: 0;
 }
 header.top .navbar > li {
-	float: left;
+	display: inline-block;
+	font-size: 16px;
 }
 
 
@@ -161,7 +165,6 @@ main {
 	z-index: 3;
 }
 .services {
-	height: 421px;
 	color: white;
 }
 .services h2 {
@@ -171,7 +174,7 @@ main {
 	font-weight: 300;
 }
 .services a.button {
-	margin: 45px auto 0 auto;
+	margin: 45px auto 20px auto;
 }
 .services .icon-list li:before {
 	display: inline-block;
@@ -398,4 +401,12 @@ footer.bottom nav a {
 .copyright a {
 	text-decoration: none;
 	color: inherit
+}
+
+
+
+@media all and (max-width: 959px) {
+	.banner-container, .services-container, .news-container, .stories-container {
+		height: auto;
+	}
 }
