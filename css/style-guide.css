@@ -284,7 +284,6 @@ body {
 }
 .block .offhover {
 	position: absolute;
-	top: 0;
 }
 .hover-block .onhover {
 	opacity: 0;
@@ -296,6 +295,7 @@ body {
 	opacity: 1;
 }
 .company-block {
+	top: 0;
 	list-style-type: none;
 	display: inline-block;
 	border-radius: 2px;
@@ -330,6 +330,7 @@ body {
 
 
 .quote-block {
+	top: 0;
 	text-align: left;
 	list-style-type: none;
 	display: inline-block;
