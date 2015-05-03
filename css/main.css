@@ -116,6 +116,28 @@ header.top .navbar > li {
 	font-size: 16px;
 }
 
+header.top .navbar-checkbox {
+	display: none;
+	position: absolute;
+	left: 10px;
+	top: 50px;
+	content: url('../img/hamburger-icon.png');
+	background: linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);
+	border-radius: 3px;
+	border: 1px #d9d9d9 solid;
+	padding: 5px;
+}
+header.top .open-search-button {
+	position: absolute;
+	right: 5px;
+	top: 47px;
+	content: url('../img/searchBtnMobile.png');
+	background: linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);
+	border-radius: 3px;
+	border: 1px #d9d9d9 solid;
+	padding: 5px;
+}
+
 
 
 header.top,
@@ -368,6 +390,9 @@ footer.bottom nav a {
 	position: relative;
 	left: -10px;
 }
+.media .post .text {
+	width: 240px;
+}
 .media .subscribe {
 	margin: auto;
 	width: 223px;
@@ -440,7 +465,74 @@ footer.bottom .small li div {
 }
 
 @media all and (max-width: 959px) {
-	.banner-container, .services-container, .news-container, .stories-container, .footer-container, footer.bottom, .media {
+	header.top {
+		text-align: center;
+	}
+	header.top nav {
+		margin-left: 0;
+	}
+	header.top > img {
+		text-align: center;
+	}
+	header.top .navbar {
+		display: none;
+		width: 100%;
+		padding-left: 0;
+	}
+	header.top .navbar-checkbox:hover + nav .navbar, nav:hover .navbar {
+		display: block;
+	}
+	header.top .navbar li {
+		background-color: #eeeeee;
+		border-bottom: 1px #cccccc solid;
+		width: 100%;
+		display: block;
+		padding-bottom: 0;
+	}
+	header.top li:hover .dropdown {
+		display: none;
+	}
+	header.top .navbar > li:hover, 
+	header.top li:hover .dropdown {
+		box-shadow: none;
+	}
+	header.top .navbar > li:hover {
+		padding: 5px 10px 0 10px;
+		border: none;
+		border-bottom: 1px #cccccc solid;
+	}
+	header.top .navbar-checkbox {
+		display: block;
+	}
+	header.top .upper-menu {
+		display: none;
+	}
+	header.top .search-field {
+		position: static;
+		width: 100%;
+		border: none;
+	}
+	header.top .search-field .submit {
+		display: none;
+	}
+	header.top .search-field .input {
+		display: none;
+		width: 90%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 100px;
+		border-radius: 5px;
+		border: 1px solid #D1D1D1;
+		padding: 0 5px;
+	}
+	header.top .open-search-button:focus + .input, header.top .search-field .input:focus, header.top .search-field .input:hover {
+		display: block;
+	}
+
+
+	header.top, header.top nav, .banner-container, .services-container, .news-container, .stories-container, .footer-container, footer.bottom, .media {
 		height: auto;
 		width: 100%;
 	}

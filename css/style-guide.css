@@ -238,7 +238,8 @@ body {
 	font-size: 15px;
 
 	padding-top: 10px;
-	margin-right: 10px;
+	padding-right: 10px;
+	margin-right: 1px;
 }
 .styled-post .text {
 	top: 0;
