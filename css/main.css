@@ -554,7 +554,7 @@ footer.bottom .small li div {
 		width: 100%;
 	}
 	.banner-container {
-		background-size: auto;
+		background-size: auto 100%;
 	}
 
 	
