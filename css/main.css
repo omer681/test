@@ -128,6 +128,7 @@ header.top .navbar-checkbox {
 	padding: 5px;
 }
 header.top .open-search-button {
+	display: none;
 	position: absolute;
 	right: 5px;
 	top: 47px;
@@ -477,17 +478,30 @@ footer.bottom .small li div {
 	header.top .navbar {
 		display: none;
 		width: 100%;
+		top: 13px;
 		padding-left: 0;
 	}
-	header.top .navbar-checkbox:hover + nav .navbar, nav:hover .navbar {
+	header.top .navbar-checkbox:focus + nav .navbar, nav:hover .navbar {
 		display: block;
 	}
+	header.top .navbar, header.top .search-field .input {		
+		box-shadow: rgba(0,0,0,0.4) -5px 9px 8px 0px;
+	}
+	header.top .navbar:first-child {
+		border-top: 1px #cccccc solid;
+	}
 	header.top .navbar li {
+		box-sizing: border-box;
+		padding: 1px 0 2px 0;
 		background-color: #eeeeee;
 		border-bottom: 1px #cccccc solid;
 		width: 100%;
+		height: 40px;
+		line-height: 34px;
 		display: block;
-		padding-bottom: 0;
+	}
+	header.top .navbar li a {
+		vertical-align: middle;
 	}
 	header.top li:hover .dropdown {
 		display: none;
@@ -497,9 +511,9 @@ footer.bottom .small li div {
 		box-shadow: none;
 	}
 	header.top .navbar > li:hover {
-		padding: 5px 10px 0 10px;
-		border: none;
-		border-bottom: 1px #cccccc solid;
+		padding: 0;
+		border-top: 1px #cccccc solid;
+		border-bottom: 2px #cccccc solid;
 	}
 	header.top .navbar-checkbox {
 		display: block;
@@ -527,6 +541,9 @@ footer.bottom .small li div {
 		border: 1px solid #D1D1D1;
 		padding: 0 5px;
 	}
+	header.top .open-search-button {
+		display: block;
+	}
 	header.top .open-search-button:focus + .input, header.top .search-field .input:focus, header.top .search-field .input:hover {
 		display: block;
 	}
@@ -539,35 +556,8 @@ footer.bottom .small li div {
 	.banner-container {
 		background-size: auto;
 	}
-	.services .icon-list li {
-		width: 33%;
-	}
 
-	footer.bottom .wide {
-		display: none;
-	}
-	footer.bottom .small {
-		display: block;
-	}
-	footer.bottom .media {
-		position: static;
-		width: 100%;
-	}
-	footer.bottom .blog h3 {
-		margin-top: 0;
-		padding-top: 10px;
-	}
-
-	.stories .right {
-		display: none;
-	}
-
-	.stories {
-		padding-bottom: 20px;
-	}
-}
-
-@media all and (max-width: 900px) {
+	
 	.banner-container .info-boxes li {
 		box-sizing: border-box;
 		width: 100%;
@@ -616,5 +606,49 @@ footer.bottom .small li div {
 
 	.banner-container .bullet-links {
 		position: static;
+	}
+
+
+	.services .icon-list li {
+		width: 33%;
+	}
+
+	.news .post {
+		width: 100%;
+	}
+	.news dt {
+		position: static;
+		display: block;
+		clear: left;
+	}
+	.news dd {
+		display: block;
+		clear: left;
+		padding-bottom: 50px;
+	}
+	.news dl {
+		margin-bottom: 0;
+	}
+
+	.stories .right {
+		display: none;
+	}
+	.stories {
+		padding-bottom: 20px;
+	}
+
+	footer.bottom .wide {
+		display: none;
+	}
+	footer.bottom .small {
+		display: block;
+	}
+	footer.bottom .media {
+		position: static;
+		width: 100%;
+	}
+	footer.bottom .blog h3 {
+		margin-top: 0;
+		padding-top: 10px;
 	}
 }

@@ -174,7 +174,7 @@ body {
 
 .post {
 	display: block;
-	width: 263px;
+	width: 253px;
 }
 .styled-post {
 	border-radius: 2px;
@@ -239,7 +239,6 @@ body {
 
 	padding-top: 10px;
 	padding-right: 10px;
-	margin-right: 1px;
 }
 .styled-post .text {
 	top: 0;
